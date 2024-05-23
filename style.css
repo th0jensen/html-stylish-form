@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  font-family: IBM Plex Sans;
+}
+
+body {
+  height: 100vh;
+  background-color: #181818;
+  background-image: linear-gradient(to top right,
+      rgba(88, 184, 226, 1),
+      rgba(205, 61, 244, 1));
+}
+
+.card-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.card {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  display: grid;
+  row-gap: 30px;
+}
+
+.input-wrapper {
+  display: grid;
+  border-bottom: 1px solid lightgray;
+}
+
+label {
+  font-size: 14px;
+}
+
+#input-field,
+#services,
+#budget {
+  padding: 20px 0px;
+  border: none;
+  outline: none;
+
+  /* Is this a fair use of nesting? */
+  &::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: lightgray;
+  }
+}
+
+.submit-button {
+  color: white;
+  background-image: linear-gradient(to left,
+      rgba(88, 184, 226, 1),
+      rgba(205, 61, 244, 1));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+}
