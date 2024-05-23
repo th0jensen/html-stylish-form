@@ -1,3 +1,15 @@
+@font-face {
+  font-family: IBM Plex Sans;
+  font-weight: regular;
+  src: url('fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: IBM Plex Sans;
+  font-weight: bold;
+  src: url('fonts/IBMPlexSans-Bold.ttf');
+}
+
 * {
   margin: 0;
   font-family: IBM Plex Sans;
@@ -70,4 +82,10 @@ label {
   padding-bottom: 10px;
   border: none;
   border-radius: 15px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: auto;
+  }
 }
